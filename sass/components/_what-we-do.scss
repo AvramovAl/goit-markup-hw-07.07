@@ -1,0 +1,13 @@
+.activity {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  padding-bottom: $section-padding;
+}
+
+.section-product {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
