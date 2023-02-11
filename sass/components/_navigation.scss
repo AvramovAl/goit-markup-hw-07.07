@@ -6,7 +6,7 @@
   color: $pressed-state;
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 767px) {
   .nav .container {
     padding-bottom: 24px;
   }
@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .nav .container,
   .site-nav,
   .site-nav-menu {
@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (min-width: 780px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-nav-contacts .item + .item {
     margin-top: 4px;
   }

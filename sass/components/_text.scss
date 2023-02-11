@@ -12,7 +12,7 @@
 
   // media 780px
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 768px) {
     width: 496px;
     font-size: 56px;
   }
@@ -29,7 +29,7 @@
 
   // media 779px
 
-  @media screen and (max-width: 779px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 
@@ -65,4 +65,69 @@
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+}
+
+// Section Team
+
+.team-list .title {
+  margin-bottom: 8px;
+
+  color: $dark;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.team-list .text {
+  margin-bottom: 8px;
+
+  color: $text;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+// Section Footer
+
+.footer-p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 268px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: $accent;
+}
+
+.footer-right > .title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: $w-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.subscribe-heading {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: $w-color;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 60px;
+  }
 }
