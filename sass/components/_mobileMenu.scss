@@ -25,7 +25,9 @@
 
 .menu-container {
   position: fixed;
-  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
@@ -38,6 +40,10 @@
 
   &.is-open {
     transform: translateX(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -78,7 +84,7 @@
 
 .mobile-nav-menu {
   margin-top: 80px;
-  margin-bottom: 284px;
+  margin-left: 40px;
 }
 
 .mobile-nav-menu .item:not(:last-child) {
@@ -102,6 +108,10 @@
   padding-bottom: 40px;
 }
 
+.mobile-nav-contacts {
+  margin-left: 40px;
+}
+
 .mobile-nav-contacts .number {
   font-weight: 600;
   font-size: 36px;
@@ -121,6 +131,7 @@
   display: flex;
   justify-content: center;
   margin-top: 48px;
+  margin-bottom: 40px;
 
   & .item {
     width: 40px;
