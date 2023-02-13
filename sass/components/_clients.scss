@@ -8,7 +8,11 @@
   flex-wrap: wrap;
   margin: -8px;
 
-  // media 780px
+  @media screen and (max-width: 405px) {
+    justify-content: center;
+  }
+
+  // media 768px
 
   @media screen and (min-width: 768px) {
     margin: -12px;

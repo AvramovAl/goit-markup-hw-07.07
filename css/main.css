@@ -290,12 +290,21 @@ img {
   margin-top: 48px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 425px) {
+  .mobile-social {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 .mobile-social .item {
   width: 40px;
   height: 40px;
 }
-.mobile-social .item + .item {
-  margin-left: 56px;
+@media screen and (min-width: 426px) {
+  .mobile-social .item + .item {
+    margin-left: 56px;
+  }
 }
 
 .mobile-social-link {
@@ -330,7 +339,6 @@ img {
 .headline {
   margin-left: auto;
   margin-right: auto;
-  width: 319px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -338,6 +346,11 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .headline {
+    width: 319px;
+  }
 }
 @media screen and (min-width: 768px) {
   .headline {
@@ -598,6 +611,11 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav-contacts {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .site-nav-contacts {
     margin-left: auto;
@@ -692,6 +710,9 @@ img {
 .promo {
   background-color: #2e2f42;
   min-height: 428px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -985,6 +1006,13 @@ img {
       flex-wrap: wrap;
   margin: -8px;
 }
+@media screen and (max-width: 405px) {
+  .clients-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients-list {
     margin: -12px;
@@ -1173,14 +1201,19 @@ img {
 }
 
 .subscribe-field input {
-  width: 396px;
   height: 40px;
+  width: 268px;
   padding: 8px 16px;
   background-color: #2e2f42;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .subscribe-field input {
+    width: 396px;
+  }
 }
 @media screen and (max-width: 767px) {
   .subscribe-field input {

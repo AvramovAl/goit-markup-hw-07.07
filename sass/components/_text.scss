@@ -1,7 +1,6 @@
 .headline {
   margin-left: auto;
   margin-right: auto;
-  width: 319px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -10,7 +9,13 @@
   text-transform: capitalize;
   color: #ffffff;
 
-  // media 780px
+  // media 480px
+
+  @media screen and (min-width: 480px) {
+    width: 319px;
+  }
+
+  // media 768px
 
   @media screen and (min-width: 768px) {
     width: 496px;
@@ -27,7 +32,7 @@
   color: $dark;
   margin-bottom: 8px;
 
-  // media 779px
+  // media 767px
 
   @media screen and (max-width: 767px) {
     text-align: center;

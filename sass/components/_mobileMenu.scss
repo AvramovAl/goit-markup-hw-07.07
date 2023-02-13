@@ -135,13 +135,18 @@
   margin-top: 48px;
   margin-bottom: 40px;
 
+  @media screen and (max-width: 425px) {
+    justify-content: space-evenly;
+  }
+
   & .item {
     width: 40px;
     height: 40px;
   }
-
-  & .item + .item {
-    margin-left: 56px;
+  @media screen and (min-width: 426px) {
+    & .item + .item {
+      margin-left: 56px;
+    }
   }
 }
 
